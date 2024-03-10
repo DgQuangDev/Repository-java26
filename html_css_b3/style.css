@@ -1,0 +1,48 @@
+.box1 {
+  background-color: blueviolet;
+  width: 300px !important; /*chieu rong*/
+  height: 300px !important; /* chieu cao*/
+  padding: 10px !important; /*cach o chu*/
+  margin-bottom: auto !important; /*cach o phu*/
+  border: 5px solid black; /*bo vien*/
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  font-size: 50px;
+  overflow: auto; /*chong tran*/
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: inline-block
+}
+
+.inline_box1 {
+  background-color: white;
+  width: 300px !important; /*chieu rong*/
+  height: 300px !important; /* chieu cao*/
+  padding: 10px !important; /*cach o chu*/
+  margin-bottom: auto !important; /*cach o phu*/
+  border: 5px solid black; /*bo vien*/
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  font-size: 50px;
+  overflow: auto; /*chong tran*/
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  display: inline-block
+}
+
+.inline_box2 {
+  background-color: yellow;
+  padding: 25px;
+}
+.box2 {
+  background-color: blueviolet;
+  width: 300px !important; /*chieu rong*/
+  height: 300px !important; /* chieu cao*/
+  padding: 10px !important; /*cach o chu*/
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  display: inline-block;
+}
