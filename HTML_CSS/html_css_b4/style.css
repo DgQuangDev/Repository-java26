@@ -1,0 +1,13 @@
+.container {
+  background-color: green !important;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  display: flex !important;
+}
+.item {
+  background-color: black !important;
+  width: 300px;
+  height: 300px;
+}
