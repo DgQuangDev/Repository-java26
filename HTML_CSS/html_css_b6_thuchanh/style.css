@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%; /*Đảm bảo hình ảnh không bao giờ rộng hơn container của nó.*/
+  width: 100%; /*Cho phép hình ảnh co giãn để lấp đầy container của nó (nếu không vượt quá max-width).*/
+  vertical-align: center; /* Căn chỉnh hình ảnh theo chiều dọc ở giữa container của nó.*/
+  height: auto; /*Chiều cao của hình ảnh tự động điều chỉnh theo tỷ lệ khung hình, đảm bảo hình ảnh không bị méo.*/
+}
+body {
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column; /*sắp xếp phần body theo chiều dọc có thứ tự lần lượt*/
+  align-items: center; /*Căn chỉnh các thành phần con nằm ở giữa theo chiều ngang.*/
+}
+
+.nunito {
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+.nunito--400 {
+  color: rgb(185, 28, 28);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 37.5px;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-item-center {
+  align-items: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: rgb(185, 28, 28);
+}
+
+.gap-8 {
+  gap: 8px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.item-w320 {
+  width: 320px;
+}
+.item-w154 {
+  width: 154px;
+}
+.item-w209 {
+  width: 209px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.card-info {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+}
+.position-relative {
+  position: relative;
+}
+.possition-absolute {
+  position: absolute;
+}
+.position-l12-b32 {
+  left: 12px;
+  bottom: 32px;
+}
+.position-l12-b8 {
+  left: 12px;
+  bottom: 8px;
+}
+.position-r12-b8 {
+  right: 12px;
+  bottom: 8px;
+}
+.position-l12-b11 {
+  left: 12px;
+  bottom: 11px;
+}
+.position-t12-l12 {
+  left: 12px;
+  top: 12px;
+}
+.anime-title {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.anime-view-ep {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+
+/*HEADER*/
+.header {
+  width: 100%; /*chiều rộng =100% màn hình */
+  height: auto; /*chiều cao được tự động tính toán dựa vào chiều cao ở bên trong */
+  background-color: #1e293b;
+  display: flex; /*bật chế độ flex-box , giúp sắp xếp linh hoạt */
+  flex-direction: column;
+  align-items: center;
+  line-height: 24px; /*điều chỉnh khoảng cách các dòng trong văn bản*/
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgb(51, 65, 85) 0px 1px 3px 0px, rgb(51, 65, 85) 0px 1px 2px -1px;
+  /* Thiết lập đổ bóng cho header.
+      Phần này hơi phức tạp, nó gồm 4 lớp đổ bóng: 2 lớp đầu tiên vô hiệu hóa (rgba(0, 0, 0, 0) ),
+      lớp thứ 3 tạo đổ bóng nhẹ màu tối (rgb(51, 65, 85)) với kích thước 1px theo hướng dưới chân (bottom) của header,
+      lớp thứ 4 tạo thêm 1 lớp đổ bóng phía trong (inset) với kích thước nhỏ hơn.*/
+  border-bottom-style: solid; /*Thêm đường viền ở phía dưới của header với kiểu đường viền là solid (liền nét).*/
+  border-bottom-color: rgb(
+    229,
+    231,
+    235
+  ); /*hiết lập màu sắc của đường viền dưới header thành màu xám nhạt (rgb(229, 231, 235)).*/
+  color: rgb(
+    156,
+    163,
+    175
+  ); /*thiết lập màu sắc mặc định của chữ (text) bên trong header thành màu xám nhạt (rgb(156, 163, 175)).*/
+  position: fixed; /*Giữ cho header cố định ở một vị trí trên cùng cửa sổ trình duyệt khi cuộn trang (scroll).*/
+  z-index: 1; /*Giữ cho header cố định ở một vị trí trên cùng cửa sổ trình duyệt khi cuộn trang (scroll).*/
+}
+
+.header-element {
+  width: 1386px;
+  display: flex;
+  justify-content: center; /*căn chỉnh các thành phần con theo trục ngang ra giữa*/
+  align-items: center; /*căn chỉnh các thành phần con theo trục dọc ra giữa*/
+}
+
+.header-logo {
+  width: 156px;
+  margin-right: 49px;
+  padding: 5px 5px;
+}
+.header-category {
+  display: flex;
+  padding-top: 15px;
+  gap: 14px; /*khoảng cách giữa các phần tử con là 14px */
+  margin-right: 118px; /*khoảng cách tới div class: seaching box bên cạnh là 118px */
+}
+.header-category-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-width: 1px;
+  border: solid;
+  border-color: rgb(55, 65, 81);
+  /*thiết lập đường viền bao quanh .header-category-item với:
+    Kiểu đường viền solid (liền nét).
+    Màu sắc đường viền rgb(55, 65, 81) (xám tối).
+    Độ dày đường viền 1px.*/
+  border-radius: 9999px; /*Thiết lập độ bo tròn cho các góc của .header-category-item thành một giá trị rất lớn (gần như tròn hoàn hảo).*/
+  height: 30px;
+  line-height: 21px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 14px;
+}
+.item {
+  display: block;
+  /*Thiết lập giá trị hiển thị mặc định của element là block. 
+Theo mặc định, các element sẽ hiển thị inline (theo dòng chữ), tuy nhiên với display: block thì element sẽ chiếm toàn bộ chiều rộng trên một dòng mới.*/
+  text-decoration: none;
+  color: rgb(
+    156,
+    163,
+    175
+  ); /*Thiết lập màu sắc mặc định của chữ (text) bên trong element thành màu xám nhạt (rgb(156, 163, 175)).*/
+}
+.search-box {
+  width: 320px;
+  height: auto;
+  position: relative;
+  /* với position: relative thì element có thể dịch chuyển so với vị trí mặc định đó (sử dụng các thuộc tính như top, right, bottom, left).*/
+}
+.box {
+  width: 320px;
+  height: 30px;
+  position: relative;
+  border: solid; /*tạo viền nét liền*/
+  border-width: 1px;
+  border-radius: 9999px;
+  border-color: rgb(55, 65, 81);
+}
+.search-icon {
+  position: absolute;
+  /* Vị trí mặc định của element là static (theo vị trí khai báo trong HTML), 
+  nhưng với position: absolute thì icon sẽ được đặt chồng lên và tách biệt khỏi element cha (.search-box).*/
+  right: 2px; /*Thiết lập khoảng cách từ cạnh phải của element cha (.search-box) đến icon tìm kiếm là 2 pixels.*/
+  top: 2px; /*Thiết lập khoảng cách từ cạnh trên của element cha (.search-box) đến icon tìm kiếm là 2 pixels.*/
+}
+.navigation-bar {
+  width: 320px;
+  margin-right: 0;
+}
+.header-function {
+  gap: 8px;
+  margin-left: 193px;
+}
+.function-icon {
+  width: 40px;
+  height: 40px;
+  border: 0px solid rgb(229, 231, 235);
+  background-color: rgb(243, 244, 246);
+  border-radius: 50%;
+  padding: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/*MAIN*/
+.container {
+  width: 1386px;
+  margin-left: auto;
+  margin-right: auto;
+  /*Thuộc tính này sẽ tự động đặt lề trái và lề phải của phần tử .
+  container bằng nhau và bằng một giá trị phù hợp để phần tử được căn giữa màn hình.*/
+}
+.main-banner {
+  margin-top: 80px;
+  height: 390px;
+  object-fit: cover;
+  /*Thuộc tính object-fit dùng để điều khiển cách hiển thị nội dung bên trong một phần tử,
+   thường được sử dụng cho hình ảnh (image).
+      Giá trị cover sẽ điều chỉnh kích thước của nội dung (hình ảnh) để phủ kín toàn bộ phần tử .
+      main-banner đồng thời duy trì tỉ lệ khung hình gốc của nội dung */
+  margin-bottom: 30px;
+  cursor: pointer; /*thay đổi con trỏ chuột khi di chuyển lên phần tử*/
+}
+.sale {
+  gap: 12px; /*khoảng cách giữa 2 phần tử là 12px */
+}
+.sale-card {
+  width: 154px;
+  height: 154px;
+  position: relative;
+  cursor: pointer;
+}
+.sale-card-discount {
+  background-color: rgba(220, 38, 38, 0.8);
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  /*width: 48px; height: 48px;:
+    Thiết lập chiều rộng và chiều cao của phần tử đều là 48px, tạo thành hình vuông.
+  border-radius: 50%;:
+  Thiết lập kiểu bo tròn cho viền của phần tử thành hình tròn (50% tương ứng với hình tròn).*/
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+.sale-card-jpg {
+  width: 154px;
+  height: 154px;
+}
+.sale-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  text-wrap: nowrap;
+  height: 40px;
+  padding: 12px;
+}
+/*new movie card*/
+.new-movie-card-title {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+    Noto Color Emoji;
+  font-weight: 400;
+  color: red;
+}
+.new-movie-card-all {
+  flex-wrap: wrap; /*Giá trị wrap của flex-wrap cho phép các flex item bao quanh sang dòng mới khi cần.*/
+  gap: 12px; /*khoảng cách giữa 2 phần tử là 12px */
+}
+
+.new-movie-card-product {
+  width: 320px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-name {
+  color: #ffffff;
+}
+.product-description {
+  color: #ffffff;
+}
+.product-view {
+  color: #ffffff;
+}

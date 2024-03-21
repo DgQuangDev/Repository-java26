@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vui Ghe Anime Vietsub Online</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--đây là phần body-->
+    <header class="header">
+      <!--đây là phần header-->
+      <div class="header-element">
+        <!--đây là phần chứa các thẻ con của header-->
+        <div class="header-logo">
+          <!--thẻ con logo-->
+          <a href="/index.html"
+            ><img
+              src="https://vuighe2.com/assets/img/logo_v8.png"
+              alt="vuighe2.com"
+          /></a>
+        </div>
+        <div class="header-category">
+          <!--thẻ chứa danh mục tùy chọn-->
+          <div class="header-catagory-item Nunito">
+            <a href="#" class="item">Anime</a>
+          </div>
+          <div class="header-catagory-item Nunito">
+            <a href="#" class="item">Movie</a>
+          </div>
+          <div class="header-catagory-item Nunito">
+            <a href="#" class="item">English 1-1</a>
+          </div>
+          <div class="header-catagory-item Nunito">
+            <a href="#" class="item">BXH</a>
+          </div>
+        </div>
+        <!-- kết thúc danh mục tùy chọn-->
+        <div class="search-box">
+          <!--thẻ ô tìm kiếm-->
+            <input class="box"type="text"/>
+            <div class="search-icon">🔍</div>
+        </div> <!--kết thúc ô searching-->
+        <div class="navigation-bar">
+          <div class="header-function flex align-items-center">
+                <img class="function-icon" src="data:image/jpeg;base64,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" alt="light">
+                <img class="function-icon" src="data:image/png;base64,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" alt="info">
+                <img class="function-icon" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAQDxAVDxISEg8QFRAQEA8REBAPGBIWFhUWFhcYHSggGRolGxUVITEhJSkrLy4uFyEzODUtNygtLi0BCgoKDg0OFRAPFSsZFR0rLi0rKysrLS0rKystLSsrKysrKy0rLTc3LSstKzcrNzctKystKzctLSsrLS0rLTctK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAAAQIDBQcIBgT/xAA8EAACAgEBBQYCCQIFBQEAAAAAAQIDEQQFBhIhQQcTMVFhcSKBFCMyQlJikaHwU7FygoOSwRUzQ2OzCP/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREC/9oADAMBAAIRAxEAPwDdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFca/PkBQC+q0WrY48ALcpCCIjH+epWAAAAAAAAAAAAAAACHICJSEF1IjHz/jKwAAAAAAAAAAAAF2qPUCYQwee3v310ezI/Xz47ZLMNPViV0154ziMfzSwvLL5GG7UN/1s2Co0+J6y2OVnnHT1+HeTXVt54Y9cNvksPnvVamy2ydts5W2TfFOyb4pzl5t/wAwTVkbB1/bJtKd0Z1QqoqjJPuFHvHZDPOM7JLPNdYqOPU3Zu5tmnX6arV0P4LFnheOKuxcpQl+ZPKfscnGwuxnev6Hq/olssUauUYrL5V6rCUJe0klB+vB5MSrY35ZHDKS/OOUWCsgAAAAAAAAAAAAARgkAAAAAAAAAUuRUAAAAEpZJ1uqhRVZdbLhrqhOycn4RhGLlJ/omTUuZ4ntr2i6dk2Qi8PUWU6f3i3xzXzhXJfMDQm3Nqz1mqv1Vv2rrJWYfPgj4Qh7Riox+R8UiAZdAj9vVPDXsSAOm+zXeX/qOgrtm83V/UXrr3sUvix+aLjL/NjoektjzOeuxzeL6HtGNM3inWcNEsvkrsvuZfq3D/UXkdEzWUajFiwAAimUioAAAAAAAAAAAAAAAAAAAAAAAAFMmBdrlhmsf/0HJ/Q9Guj1efmqLcf3ZsyiPM1929abj2ZVZ/S1VUn7ShZX/ecQsaDABlsBsHsm3Gp2m77tXxOimUa1CEpQ725riknKPNKMXHwazxePLn73VdjGzJS4oT1NMf6cLoSj+tkJS/cYmtAOTXNNxa5qSeHFrmmn0a8cnWG6m1JavQ6XUzi4TtprnKLTWJ4xLGemU8PqsMw+w+zbZWkkpw0yusWGrNRJ3NNeDUZfDF+qSPWylgsZt1ZmubKSZPJBUAAAAIkwDeCSiMer/sVgAAAAAAAAAAAAAAAARJkKPmVACqt8zBdo+zXqtla6pLil3Ltil4uypq2KXu4JfMzZ9HJrzT/sBx0mSZPefZD0Wt1WkxhU2zjDxf1L+Kp8/wAkoGMMujofsQpUdj1SXjZdqpy9WrZVr9oR/Q91OeGa/wCwnVKeynX1p1N9b/zcNq/+h761czTFHYygAIAAAAAIkylR8ysAAAAAAAAAAAAAAAAAAAAAAAvVPkWSqt4YGm+33YXDbptfBcpr6Na1+OOZVP5rvFn8sTUh1bvhsKO0NDqNJLCdkPgk/uXRfFXL2UlHPmso5VsrlCUoTi4ThKUJQfjCcW1KL9U00St8tp9gG1eDUavSSfK6uF8F0463wz+bjOH+w3bauRydu5tieh1en1cE26bFJxXjOt5jZFerg5L3aOrtJqYXVwtrkp12QjOElzUoSWYtejTQjNUAmSwQVAAAAAAAAAAAAmGQkBIAAAAAAAAAAAAAAAAAAv1yyjQvbfu19H1cdbXHFWr5Tx4R1UY8/wDdFZ94yfU3rXLDMbvdsCG0dHdpbOXHHMJ/07o865/KSWV1WV1CyuUzdnYZvV3lUtm3S+OlSsobf2qG8yh7wk+X5ZJfdNMazS2U2WU2x4LK5yrnB/dnF4a9ffqV7N19umuq1FEuC2qashLxxJdGuqaymuqbRlqzXXVkclkxe5u81W09JDUVfDL7NtWcum5L4ov06p9U0zMWQ6mmFsAAACpQfkBSCWsEAAAAAAAAAAAAAAAAAAAAAAAAAC9XLKLJMXgDUfblulzW1KI/hr1KiunhXc/2g/Tg6JmnjsDU6eFtc67IqyuyMoShJZjOElhpryaZzDv7urPZerlS8ypnxWUWP79Wfst/jjlJ+fJ/eJWpVvcveq7ZepV9XxwliF1OcRurz+0lluL6ZfRs6T3d21RrqI6jTWKyuXL80JrxhOP3ZLqv+MHJpmN2N5NVs67vtLPhzhTrll1XRXScf1w1zWeT5vMlWx1TOvy/QoS6Hj90e0/Qa5RhZJaPUPC7m6SUJy/9dnJS9niXoe4NMKYQwYnaW9Oh019emv1Vdd1soxjU3mWZfZ4sfYT8E5YTPFdrHaFLRZ0WjeNTKKlZdyf0eElyUV1sa58/BYfVGh7JOTlKbc5SbcpSblKcn4uTfNt+bJqyOw5RyWGjw3Y/vi9dpnpr5Z1OmUVxN/Ffp/CNnrJfZl64f3j31sepUWgAAAAAAhsBKWCI58SIrnz/AIysAAAAAAAAAAAAAAAACuuXQw2+W69W09LPT2/DL7dVuMypuS+GS810a6ptGWLtc+jA5K2xsu7R32abUQ4La3hrxi10lF9Ytc0/+co+M6Y7QtyKtq0rDVWprT7m5rl5uuePGD/Z811T5w2ns67S3T0+ordVtbxKEv2afg4vxTXJma3K+Voyezd4dbpo8On1d9McYUIXWKtL0hnC+SMaAqq62U5SnOUpzk3KU5ylOcpecpPm36spAAyW7W27NBq6dXVzlVL4oZwrKnynB+6/RpPodVbN11eopqvplx12wjZCXnCSyvn6HIZubsF3ibhds2x/9vi1FGf6cpfWwXtOSl/qPyLGeo2vJYZBdtXLJaKyAAAQ4kgAAAAAAAAClyKgAAAAAAAAAAAAu1z8zz2+u5em2pUo2ru7oJ93qIJd5X6P8UH1i/lh8zOFyFnmByzvVurq9m293qq/hbarvhl03f4ZdJflfP3XMwp17rdHVfXKq6uN1c1iULIqUJL1TNVb09i8JOVmzbu6b5/R9Q5Sr9oWLMo+zUvdExqdNLEmc2xudtLSN9/orVFZ+srh31WPPjrykv8AFhmA7xZ4crOcYzzz5Y8yNKzK7qbXlotdpdSm/q7YcSWW5VSfBYsLxbhKWF54MhsDcHaeta7rSyqg/wDzalSorXquJcUl6xizce5HZhpdnyjfdL6XqY81ZKPDVU/OuHPn+ZtvyxnAxLXvGj5y/OWCwaYAAAAAAAAAAAAAAAAACmUgJbJKIx6srAAAAAAAAAmMsFyNvmWgB9CZT3Uc8XCuL8WFn9SyMgfQ5JFuVvkWyJMBKXmSUKPVlYAAAAAAAAAAAAAAAAEN/wA6FKjlcysAAAAAAAAAAAAAAAAAQ2UqOSsAAAAAAAAAAAAAAAAAAAAAAAAAAQ0EgJAAAAAAAAAAAAAAAAGQ0QkBIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z" alt="user">
+            </div>
+      </div>
+        </div>
+      </div>
+      <!--kết thúc của thẻ chứa thẻ con header-->
+    </header>
+    <!--kết thúc của header-->
+    <main class="main"><!-- đây là phần main-->
+      <div class="container"><!--thẻ container chứa toàn bộ phần main-->
+        <div class="main-banner"> <!--thẻ này chứa jpg banner của trang web-->
+          <img src="https://s199.imacdn.com/vg/2023/10/15/a1e02d861cfd2757_b37b7dd1c0ade623_32888916973670718118684.jpg" alt="Banner">
+        </div>
+        <div class="sale flex"> <!--thẻ lơn chứa toàn bộ nội dung sale --trong thẻ này chứa toàn bộ các thẻ sale card-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/22/e7e4d08d1505d459_663b1a84e8dc7ac6_1995317006450672118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -40%
+            </div>
+            <div class="sale-card-title">
+              50.000đ - Áo Hoodi...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 2-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/19/55da5b3b3ccecf16_0be6cc508b38921e_2013717003778683118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -84%
+            </div>
+            <div class="sale-card-title">
+              39.000đ - Nước Hoa...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 2-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 3-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/23/73c43a1aff655c9b_730650f6dca113d4_22301170072504723.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -21%
+            </div>
+            <div class="sale-card-title">
+              99.000đ - Tẩy Da Ch...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 3-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 4-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/17/2ff302913b3aff30_bf279b569edbffc5_9646717002367521118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+            
+            </div>
+            <div class="sale-card-title">
+              699.000đ - Giày...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 4-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 5-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/20/8acb204861ac3385_19bde1bc1338c35f_2239617004845208118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -40%
+            </div>
+            <div class="sale-card-title">
+              160.000đ - Áo Thun N...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 5-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 6-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/21/d10bcee470aabeb6_c42f6ea1bd39e0c9_1629817005633147118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -53%
+            </div>
+            <div class="sale-card-title">
+              17.000đ - Mắt Kính...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 6-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 7-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/22/dc5d2e62da43503d_2978dc7ac91e58fb_1921217006430419118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -50%
+            </div>
+            <div class="sale-card-title">
+              39.000đ - Nước Hoa...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 7-->
+          <div class="sale-card"> <!-- 1 sản phẩm quảng cao 8-->
+            <div class="sale-card-jpg">
+              <img src="https://s199.imacdn.com/vg/2023/11/20/8873923bcba10644_4004744fb7b12a93_2427117004848797118684.jpg" alt="ảnh sản phẩm">
+            </div>
+            <div class="sale-card-discount">
+              -42%
+            </div>
+            <div class="sale-card-title">
+              10.000đ - Kính Giả...
+            </div>
+          </div> <!--kết thúc 1 sản phẩm quảng cáo 8-->
+        </div> <!--kết thúc thẻ lớn chưa toàn bộ nội dung sale-->
+        <div class="new-movie-card">
+          <div class="new-movie-card-title Nunito">
+            <h2>TẬP MỚI NHẤT</h2>
+          </div>
+          <div class="new-movie-card-all flex"><!--thẻ to chưa toàn bộ new movie-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 1-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/9c311fbb8f673cbb_fb84607925ed8d3d_11780917109536964118684.jpg" alt="Metallic Rouge">
+              </div>
+              <div class="product-name">
+                <h3>Metallic Rouge</h3>
+              </div>
+              <div class="product-description">
+                Tập 11 - Hành trình bị nhầm...
+              </div>
+              <div class="product-view">
+                416 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 1-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 2-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/df7bba0d2ad6fba8_152933e85f915a20_7937017109529255118684.jpg" alt="Jaku-Chara Tomozaki kun">
+              </div>
+              <div class="product-name Nunito">
+                <h3>Jaku-Chara Tomozaki kun</h3>
+              </div>
+              <div class="product-description Nunito">
+                Tập 24 - Đôi khi cuốn sách...
+              </div>
+              <div class="product-view Nunito">
+                784 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 2-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 3-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/d433bca271d3b7fd_d07cc9f72aa979df_10655017109522291118684.jpg" alt="High Card">
+              </div>
+              <div class="product-name">
+                <h3>High Card</h3>
+              </div>
+              <div class="product-description">
+                Tập 23-Sweet home
+              </div>
+              <div class="product-view">
+                826 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 3-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 4-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/98435d753c41db04_73bbc7385f726e81_10564317109527322118684.jpg" alt="30-SAI MADE DOUTEI...">
+              </div>
+              <div class="product-name">
+                <h3>30-SAI MADE DOUTEI DATO MAHOUTSUKAI Ni...</h3>
+              </div>
+              <div class="product-description"> 
+                Tập 11
+              </div>
+              <div class="product-view">
+                45  6 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 4-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 5-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/88117800693f9e61_b455a2173d8ebb36_11639217109533752118684.jpg" alt="Sengoku Rouko">
+              </div>
+              <div class="product-name">
+                <h3>Sengoku Rouko</h3>
+              </div>
+              <div class="product-description">
+                Tập 11 - Kẻ mạnh nhất diệt...
+              </div>
+              <div class="product-view">
+                1,008 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 5-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 6-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/20/aa2b1070a63fc253_cbea5e0a0a316dd0_14582117109428809118684.jpg" alt="Youkoso Jitsuryoku...">
+              </div>
+              <div class="product-name">
+                <h3>Youkoso Jitsuryoku...</h3>
+              </div>
+              <div class="product-description">
+                Tập 37 - Hãy thay đổi tham..
+              </div>
+              <div class="product-view">
+                4,016 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 6-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 7-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/19/84ccc78a032b7fc1_1af850aaab2db09b_12592217108122156118684.jpg" alt="Oroka no Tenshi">
+              </div>
+              <div class="product-name">
+                <h3>Oroka no Tenshi</h3>
+              </div>
+              <div class="product-description">
+                Tập 11 - Thanks
+              </div>
+              <div class="product-view">
+                3,152 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 7-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 8-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/19/03d8424a83868ff8_ac3ae6ea07b6f711_29963171081243923.jpg" alt="Hime-sama Goumon no Jikan Desu">
+              </div>
+              <div class="product-name">
+                <h3>Hime-sama Goumon no Jikan Desu</h3>
+              </div>
+              <div class="product-description">
+                Tập 11
+              </div>
+              <div class="product-view">
+                1,216 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 8-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 9-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/19/19726b6a36e769ae_9947e0871c7c2316_34326171081237593.jpg" alt="Tsuki ga Michibiku Isekai Douchuu">
+              </div>
+              <div class="product-name">
+                <h3>Tsuki ga Michibiku Isekai Douchuu</h3>
+              </div>
+              <div class="product-description">
+                Tập 23 - Mùa hè trưởng...
+              </div>
+              <div class="product-view">
+                24,416 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 9-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 10-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/18/6394330f9c997563_c24e91e4a2a4068f_10779117107723389118684.jpg" alt="Gekai Elise">
+              </div>
+              <div class="product-name">
+                <h3>Gekai Elise</h3>
+              </div>
+              <div class="product-description">
+                Tập 9 - Sau cơn bão
+              </div>
+              <div class="product-view">
+                2,416 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 10-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 11-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/18/057f09a3d10802fd_9663eb4329201c30_11843317107569053118684.jpg" alt="Atarashii Roushi wa Dou Tennen">
+              </div>
+              <div class="product-name">
+                <h3>Atarashii Roushi wa Dou Tennen</h3>
+              </div>
+              <div class="product-description">
+                Tập 12 - Em đi đây... nhé !?
+              </div>
+              <div class="product-view">
+                1,716 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 11-->
+            <div class="new-movie-card-product"> <!-- thẻ chứa 1 movie 12-->
+              <div class="product-jpg">
+                <img src="https://s199.imacdn.com/vg/2024/03/18/38d145c1f9b910de_746b09d3d3f96694_1636917107404995459252.jpg" alt="Prince of Tennis">
+              </div>
+              <div class="product-name">
+                <h3>Prince of Tennis</h3>
+              </div>
+              <div class="product-description">
+                Tập 116
+              </div>
+              <div class="product-view">
+                259 lượt xem
+              </div>
+            </div> <!--thẻ chứa 1 movie 12-->
+          </div> <!--thẻ to chứa toàn bộ new movie-->
+        </div>
+      </div><!--kết thúc thẻ container-->
+    </main>
+    <!-- kết thúc phần main-->
+  </body>
+  <!--kết thúc body-->
+</html>
