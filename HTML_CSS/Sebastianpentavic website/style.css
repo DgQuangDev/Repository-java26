@@ -1,0 +1,464 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+body {
+  background-color: #eeeff1;
+  display: flex;
+  flex-direction: column; /*sắp xếp phần body theo chiều dọc có thứ tự lần lượt*/
+  align-items: center; /*Căn chỉnh các thành phần con nằm ở giữa theo chiều ngang.*/
+}
+body {
+  color: black;
+}
+header {
+  width: 100%;
+  height: auto;
+  background-color: #eeeff1;
+  line-height: 28px;
+  position: fixed;
+}
+.container-header {
+  width: 1519px;
+}
+.header-logo {
+  width: 35px;
+  height: 35px;
+  margin-left: 50px;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  position: relative;
+}
+.header-title {
+  width: 166px;
+  color: #000;
+}
+.header-ỉtem {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  width: 100%;
+  display: flex; /*bật chế độ flex-box , giúp sắp xếp linh hoạt */
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  border-bottom-style: solid; /*Thêm đường viền ở phía dưới của header với kiểu đường viền là solid (liền nét).*/
+  border-bottom-color: white;
+}
+
+.container--header {
+  width: 1519px;
+}
+.header-logo {
+  display: flex;
+  width: 300px;
+  font-size: 18px;
+}
+.logo {
+  width: 35px;
+}
+.logo-title {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  gap: 35px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.nav-link--button {
+  font-size: 17px;
+  height: 48px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+/*main*/
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner {
+  margin-top: 188px;
+  height: 489px;
+  margin-bottom: 30px;
+}
+.img1 {
+  width: 419px;
+  height: 439px;
+  position: relative;
+}
+.banner-description {
+  width: 671px;
+
+  position: absolute;
+  left: 629px;
+  top: 285px;
+}
+.banner-title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 90px;
+  margin-bottom: 20px;
+}
+.banner-word {
+  font-size: 28px;
+  line-height: 1.8;
+}
+.career-title {
+  width: 600px;
+  font-size: 27px;
+  font-weight: 200;
+}
+.career-description {
+  width: 600px;
+  font-size: 22px;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.career-objects {
+  width: 400px;
+  position: absolute;
+  left: 860px;
+  top: 750px;
+  flex-wrap: wrap;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.object {
+  height: 41px;
+  font-size: 16px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: #eeeff1;
+  border-radius: 8px;
+  border: 1px solid #ced1df;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-transform: uppercase;
+  background-attachment: scroll;
+  cursor: pointer;
+}
+.working {
+  width: 1140px;
+  height: 340px;
+  margin-top: 170px;
+}
+.woking-title {
+  font-size: 27px;
+  font-weight: 200;
+}
+.custumer-info {
+  width: 1140px;
+  height: 320px;
+  display: flex;
+  justify-content: flex-end;
+}
+.custumer-all {
+  width: 255px;
+  height: 304px;
+}
+.custumer-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+.custumer-name {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+.custumer-job {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.custumer-description {
+  width: 845px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
+.main-form {
+  width: 1128px;
+  height: 523px;
+  margin-top: 187px;
+  border-bottom: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-form-title {
+  display: flex;
+  align-items: center;
+  width: 504px;
+  font-size: 64px;
+  font-weight: 400;
+  width: 502px;
+  height: 304px;
+}
+.form {
+  width: 504px;
+}
+.form-all {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+.footer {
+  width: 100%;
+  height: 206px;
+  mar
+  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo img {
+  width: 35px;
+  height: 35px;
+}
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding: 0 220px; /* Khoảng cách đều lề 2 bên 220px */
+}
+
+.footer-logo img {
+  margin-right: auto; /* Đẩy logo về phía bên trái */
+}
+
+.footer-links {
+  margin-left: auto; /* Đẩy các liên kết về phía bên phải */
+}
+
+.footer-links a {
+  margin-left: 10px; /* Khoảng cách giữa các liên kết */
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:last-child {
+  margin-right: 0; /* Loại bỏ margin-right cho phần tử cuối cùng */
+}
+
+.footer-bottom {
+  margin-top: auto; /* Di chuyển phần dưới cùng xuống dưới cùng của footer */
+  text-align: center;
+}
