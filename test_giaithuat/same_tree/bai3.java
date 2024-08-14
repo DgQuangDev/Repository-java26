@@ -40,4 +40,5 @@ public class bai3 {
         System.out.println("Hai cay co giong nhau:  " + result);
     }
 }
+//Dộ phức tạp là: O(n^2)
 
