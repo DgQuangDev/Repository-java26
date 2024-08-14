@@ -46,6 +46,6 @@ public class bai2{
         // In kết quả ra màn hình
         System.out.println("Hai chuoi s va t sau khi su ly co bang nhau khong:  " + result);
         
-
     }
 }
+    //Độ phức tạp của thuật toán: O(n+m)

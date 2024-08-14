@@ -23,4 +23,6 @@ public class bai1 {
             System.out.print(nums[i] + " ");
         }
     }
+    
 }
+    //độ phức tạp O(n)
