@@ -60,3 +60,4 @@ public class bai4 {
         }
     }
 }
+    //Độ phức tạp: O(n^2)
