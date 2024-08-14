@@ -48,4 +48,4 @@ public class bai2{
         
     }
 }
-    //Độ phức tạp của thuật toán: O(n+m)
+    //Độ phức tạp của thuật toán: O(n)
