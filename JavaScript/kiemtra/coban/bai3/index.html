@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đếm số lần xuất hiện của phần tử</title>
+  </head>
+  <body>
+    <script>
+      function getCountElement(arr) {
+        return arr.reduce((count, element) => {
+          count[element] = (count[element] || 0) + 1;
+          return count;
+        }, {});
+      }
+
+      // Ví dụ sử dụng:
+      console.log(
+        getCountElement(["one", "two", "three", "one", "one", "three"])
+      );
+
+      // Kết quả mong đợi:
+      // { one: 3, two: 1, three: 2 }
+    </script>
+  </body>
+</html>
