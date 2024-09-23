@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chạy thử JavaScript</title>
+</head>
+<body>
+
+    <script>
+        const users = [
+            { name: "Bùi Công Sơn", age: 30, isStatus: true },
+            { name: "Nguyễn Thu Hằng", age: 27, isStatus: false },
+            { name: "Phạm Văn Dũng", age: 20, isStatus: false }
+        ];
+
+        // Function 1: Lọc user có age > 25 và isStatus = true
+        function filterUsersByAgeAndStatus(users) {
+            return users.filter(user => user.age > 25 && user.isStatus);
+        }
+
+        // Function 2: Sắp xếp user theo age tăng dần
+        function sortUsersByAge(users) {
+            return users.sort((a, b) => a.age - b.age);
+        }
+
+        // Gọi function và in ra kết quả
+        console.log("Mảng các user có age > 25 và isStatus = true:");
+        console.log(filterUsersByAgeAndStatus(users));  // Kết quả cho function 1
+
+        console.log("Mảng các user sắp xếp theo age tăng dần:");
+        console.log(sortUsersByAge(users));  // Kết quả cho function 2
+    </script>
+
+</body>
+</html>
